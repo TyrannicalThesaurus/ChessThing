@@ -1,4 +1,4 @@
-public class ChessPiece
+class ChessPiece
 {
  private int myLocation; //x and y cord 
  private String myName; //name for the piece ie(king, bishop)
@@ -13,19 +13,17 @@ public class ChessPiece
  
  public int getLocation()
  {
-   return myLocation();
+   return myLocation;
  }
  
   public String getName()
  {
-   return myName();
+   return myName;
  }
  
- public int getPoint();
+ public int getPoint()
  {
-   return pointValue();
+   return pointValue;
  }
- 
- public abstract void move();
  
 }
