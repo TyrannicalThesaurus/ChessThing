@@ -1,17 +1,17 @@
 class ChessPiece
 {
- private int myLocation; //x and y cord 
+ private int[] myLocation; //x and y cord 
  private String myName; //name for the piece ie(king, bishop)
  private int pointValue; //amount of points a piece is worth (pawn = 1, bishop = 3, etc)
  
- public ChessPiece(int l, String n, int p)
+ public ChessPiece(int[] l, String n, int p)
  {
    myLocation = l;
    myName = n;
    pointValue = p;
  }
  
- public int getLocation()
+ public int[] getLocation()
  {
    return myLocation;
  }
