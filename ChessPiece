@@ -3,6 +3,7 @@ class ChessPiece
  private int[] myLocation; //x and y cord 
  private String myName; //name for the piece ie(king, bishop)
  private int pointValue; //amount of points a piece is worth (pawn = 1, bishop = 3, etc)
+ private String myColor; //assigns either black or white to the piece
  
  public ChessPiece(int[] l, String n, int p)
  {
@@ -25,5 +26,11 @@ class ChessPiece
  {
    return pointValue;
  }
+ 
+ public String getColor()
+ {
+  return myColor;
+ }
+ 
  
 }
