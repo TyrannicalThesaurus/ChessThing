@@ -36,4 +36,6 @@ class ChessPiece
  {
      myLocation = pos;
  }
+ 
+ public abstract void movePiece();
 }
