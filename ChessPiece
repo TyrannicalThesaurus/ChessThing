@@ -2,5 +2,6 @@ public class ChessPiece
 {
  private int myLocation; //x and y cord 
  private String myName; //name for the piece ie(king, bishop)
+ private int pointValue;
  
 }
