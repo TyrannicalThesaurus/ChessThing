@@ -9,7 +9,7 @@ public class ChessInterface
 {
     public static void main(String args[])
     {
-        //for now this'll be an int array. I could probably make this
+        //for now this'll be an int array. I could probably make this strings or smth
         int[][] board = new int[8][8];
         
         board[1][2] = 3;
