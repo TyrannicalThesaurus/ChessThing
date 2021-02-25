@@ -32,5 +32,8 @@ class ChessPiece
   return myColor;
  }
  
- 
+ public void setLocation(int[] pos)
+ {
+     myLocation = pos;
+ }
 }
