@@ -1,4 +1,15 @@
-public class Pawn extends ChessPiece 
+class Pawn extends ChessPiece 
 {
+    public Pawn(int lx, int ly, String n, int p)
+    {
+        super(lx, ly, n, p);
+    }
+    
+    public void moveForward()
+    {
+        if(getLocationy() > 0)
+        shift(0,1);
+    }
+    
     
 }
