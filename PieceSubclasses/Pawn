@@ -9,7 +9,7 @@ class Pawn extends ChessPiece
     
     public void moveForward()
     {
-        if(getLocationy() > 0)
+        if(getLocationy() > 0 && getLocationy() < 7)
         {
             if(firstMove == true)
             {
