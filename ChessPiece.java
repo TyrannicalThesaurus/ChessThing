@@ -44,4 +44,12 @@ class ChessPiece
         myLocationx = row;
         myLocationy = col;
     }
+    
+    public void shift(int horizontal, int vertical)
+    {
+        vertical = -1 * vertical;
+        
+        myLocationx += horizontal;
+        myLocationy += vertical; 
+    }
 }
