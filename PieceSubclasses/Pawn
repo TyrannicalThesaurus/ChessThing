@@ -11,7 +11,7 @@ class Pawn extends ChessPiece
     {
         if(getLocationy() > 0)
         {
-            if(firstMove = true)
+            if(firstMove == true)
             {
                 shift(0,2);
                 firstMove = false;
