@@ -1,15 +1,23 @@
 class Pawn extends ChessPiece 
 {
-    public Pawn(int lx, int ly, String n, int p)
+    private boolean firstMove = true;
+    public Pawn(int lx, int ly, String n, int p, boolean fm)
     {
         super(lx, ly, n, p);
+        firstMove = fm;
     }
     
     public void moveForward()
     {
         if(getLocationy() > 0)
-        shift(0,1);
-    }
-    
-    
+        {
+            if(firstMove = true)
+            {
+                shift(0,2);
+                firstMove = false;
+            }
+            else
+                shift(0,1);
+        }
+    }   
 }
