@@ -5,11 +5,18 @@ class Rook extends ChessPiece
         super(lx, ly, n, p);
     }
     
-    public void moveRook(int x, int y)
+    public void moveRook(String direction, int amount)
     {
         if(getLocationy() > 0 && getLocationy() < 7 && getLocationx() > 0 && getLocationx() < 7)
         {
-            shift(x, y);
+            if(direction == "up")
+                shift(0, amount);
+            else if(direction == "down")
+                shift(0, amount * -1);
+            else if(direction == "left")
+                shift(amount * -1, 0);
+            else if(direction == "right")
+                shift(amount, 0);
         }
     }   
 }
