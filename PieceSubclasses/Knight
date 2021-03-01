@@ -1,4 +1,27 @@
 public class Knight extends ChessPiece 
 {
+    public Knight(int lx, int ly, String n, int p)
+    {
+        super(lx, ly, n, p);
+    }
     
+    public void move(String direction)
+    {
+        if(getLocationy() > 0 && direction == "up-left")
+            shift(-1, 2);
+        else if(getLocationy() > 0 && direction == "up-right")
+            shift(1, 2);
+        else if(getLocationy() > 0 && direction == "down-left")
+            shift(-1, -2);
+        else if(getLocationy() > 0 && direction == "down-right")
+            shift(1, -2);
+        else if(getLocationy() > 0 && direction == "left-up")
+            shift(-2, 1);
+        else if(getLocationy() > 0 && direction == "right-up")
+            shift(2, 1);
+        else if(getLocationy() > 0 && direction == "left-down")
+            shift(-2, -1);
+        else if(getLocationy() > 0 && direction == "right-down")
+            shift(2, -1);
+    }
 }
